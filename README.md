@@ -1,7 +1,3 @@
-Thanks for the clarification! Here’s an updated version of the README for your **Recipe Book App**:
-
----
-
 # Recipe Book App
 
 The **Recipe Book App** is designed to help users search for recipes through an external API. It returns a list of matching recipes along with details like ingredients, instructions, and images. This project focuses on integrating APIs, handling HTTP requests, and presenting the fetched data in a user-friendly interface.
@@ -45,4 +41,7 @@ If you'd like to contribute:
 3. Make your changes and commit them (`git commit -m 'Add feature'`).
 4. Push to the branch (`git push origin feature-branch`).
 5. Open a pull request.
+
+## License
+This project is open source and available under the [MIT License](LICENSE).
 
