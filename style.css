@@ -6,12 +6,33 @@
 }
 
 body {
-    background-color: #adcf9b;
+    background-color: #6A9C89;
     color: #fff;
 }
 
-{
-    header nav{
-        background-color: #abcf9a;
+header nav{
+        background-color: #16423C;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 1;
     }
+
+header nav h1{
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 1;
+    text-transform: uppercase;
+}
+
+header nav form{
+    display: flex;
+    justify-content: center;
+}
+
+form input[type="text"]{
+    flex-grow:1;
+    margin-right: 10px;
+    
 }
