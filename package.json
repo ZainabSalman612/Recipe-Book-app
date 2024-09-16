@@ -1,0 +1,12 @@
+{
+  "name": "recipe-book-app",
+  "version": "1.0.0",
+  "description": "The **Recipe Book App** is designed to help users search for recipes through an external API. It returns a list of matching recipes along with details like ingredients, instructions, and images. This project focuses on integrating APIs, handling HTTP requests, and presenting the fetched data in a user-friendly interface.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
