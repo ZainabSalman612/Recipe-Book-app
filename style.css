@@ -307,7 +307,7 @@
         width: 80%;
         margin-top: 20px;
     }
-    ..category-item {
+    .category-item {
         height: 220px; /* Adjust card height for very small screens */
       }
   }
