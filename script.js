@@ -3,8 +3,8 @@ const searchBtn = document.querySelector('.searchBtn');
 const recipeContainer = document.querySelector('.recipe-container');
 const recipeDetailsContent = document.querySelector('.recipe-details-content');
 const recipeCloseBtn = document.querySelector('.recipe-close-Btn');
-const heroSection = document.querySelector('.hero'); // Select the hero section
-const categoriesSection = document.querySelector('.categories'); // Select the categories section
+const heroSection = document.querySelector('.hero');
+const categoriesSection = document.querySelector('.categories');
 
 // Function to get recipes
 const fetchRecipes = async (query) => {
@@ -12,7 +12,7 @@ const fetchRecipes = async (query) => {
     try {
         const response = await fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${query}`);
         const data = await response.json();
-        recipeContainer.innerHTML = ""; // Clear the loading message
+        recipeContainer.innerHTML = "";
 
         if (data.meals) {
             data.meals.forEach(meal => {
@@ -77,8 +77,8 @@ searchBtn.addEventListener('click', (e) => {
     e.preventDefault();
     const searchInput = searchBox.value.trim();
     fetchRecipes(searchInput);
-    heroSection.style.display = "none"; // Hide the hero section
-    categoriesSection.style.display = "none"; // Hide the categories section
+    heroSection.style.display = "none";
+    categoriesSection.style.display = "none";
 });
 
 recipeCloseBtn.addEventListener('click', () => {
