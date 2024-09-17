@@ -10,13 +10,12 @@
       integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
       crossorigin="anonymous" 
       referrerpolicy="no-referrer" />
-
     <title>Recipe Book App</title>
 </head>
 <body>
     <header>
         <nav>
-            <h1>Recipe Book</h1>
+            <h1>Recipe Drobe</h1>
             <form>
                  <input
                  type="text" 
@@ -27,10 +26,38 @@
         </nav>
     </header>
 
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Welcome to the Ultimate Recipe Book</h2>
+        <p>Discover delicious recipes from all around the world.</p>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <h3>Explore Recipe Categories</h3>
+        <div class="category-grid">
+            <div class="category-item">
+                <img src="assets/appetizers.jpg" alt="Appetizers">
+                <h4>Appetizers</h4>
+            </div>
+            <div class="category-item">
+                <img src="assets/main-courses.jpg" alt="Main Courses">
+                <h4>Main Courses</h4>
+            </div>
+            <div class="category-item">
+                <img src="assets/desserts.jpg" alt="Desserts">
+                <h4>Desserts</h4>
+            </div>
+            <div class="category-item">
+                <img src="assets/drinks.jpg" alt="Drinks">
+                <h4>Drinks</h4>
+            </div>
+        </div>
+    </section>
+
     <main>
         <section>
             <div class="recipe-container">
-              <h2>Find your Favourite Recipes here!</h2>
             </div>
             <div class="recipe-details">
                 <button type="button" class="recipe-close-Btn">
@@ -40,6 +67,11 @@
             </div>
         </section>
     </main>
+
+    <footer>
+        <p>&copy; 2024 Recipe Book. All Rights Reserved.</p>
+    </footer>
+    <div class="placeholder"></div>
 
     <script src="script.js"></script>
 </body>
