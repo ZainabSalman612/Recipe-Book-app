@@ -239,11 +239,11 @@
   }
   
   .category-grid {
-    display: flex;
-    gap: 20px;
-    width: 100%;
-    justify-content: center;
-    flex-wrap: nowrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid layout */
+    gap: 20px; /* Space between cards */
+    width: 80%; /* Adjust to your container's width */
+    margin: 0 auto; /* Center grid */
   }
   
   .category-item {
@@ -254,6 +254,8 @@
     transition: transform 0.3s ease;
     flex: 0 0 250px;
     height: 300px;
+    box-shadow: 0 5px 10px rgba(78, 78, 73, 0.1), -5px -5px 10px rgba(34, 34, 34, 0.5);
+    transition: 0.3s ease-in-out;
   }
   
   .category-item img {
@@ -271,6 +273,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0;
   }
   
   .category-item:hover {
@@ -304,6 +307,9 @@
         width: 80%;
         margin-top: 20px;
     }
+    ..category-item {
+        height: 220px; /* Adjust card height for very small screens */
+      }
   }
   
   
